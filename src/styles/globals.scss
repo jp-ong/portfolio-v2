@@ -6,11 +6,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-h1: normal 400 2rem "Quicksand", sans-serif;
+  --font-h2: normal 700 1.75rem "Inika", serif;
+  --font-h3: normal 700 1.125rem "Inika", serif;
+  --font-p: normal 400 1.125rem "Inika", serif;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
 
 body {
-  font-size: 1rem;
+  font: var(--font-p);
 }
