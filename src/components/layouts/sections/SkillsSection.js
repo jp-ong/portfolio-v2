@@ -47,6 +47,7 @@ export const SkillsSection = () => {
                     src={`/assets/skills/${skill.icon}.svg`}
                     layout="fill"
                     objectFit="contain"
+                    alt={skill.label}
                   />
                 </div>
               </div>

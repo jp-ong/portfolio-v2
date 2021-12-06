@@ -52,7 +52,7 @@ export const InfoSection = () => {
     <section className={styles.section} id="info">
       <div className={styles.intro}>
         <div className={styles.greeting}>
-          <small>Hello, I'm</small>
+          <small>Hello, I&apos;m</small>
           <h1>JOHN PAUL ONG</h1>
         </div>
         <div className={styles.image}>
@@ -61,6 +61,7 @@ export const InfoSection = () => {
               src="/assets/selfie/me.jpg"
               layout="fill"
               objectFit="cover"
+              alt="John Paul Ong image"
             />
           </div>
         </div>

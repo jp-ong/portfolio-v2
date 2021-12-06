@@ -55,6 +55,7 @@ export const ProjectsSection = () => {
                     layout="fill"
                     objectFit="cover"
                     objectPosition="top"
+                    alt={webapp.title}
                   />
                 </div>
               </a>

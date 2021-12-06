@@ -16,6 +16,7 @@ export const AboutSection = () => {
             src="/assets/selfie/mebutsmiling.jpg"
             layout="fill"
             objectFit="cover"
+            alt="John Paul Ong smiling image"
           />
         </div>
         <div className={styles.lines}>
