@@ -1,0 +1,78 @@
+section.section {
+  width: 100%;
+  max-width: 896px;
+  height: min-content;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+  overflow-y: hidden;
+}
+
+div.projects {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+
+  & > div.project {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    border-radius: 5px;
+    border: solid 1px var(--secondary);
+    padding: 0.5rem;
+
+    & div.image {
+      width: 100%;
+      height: 20vw;
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: 0.5s cubic-bezier(0, 0.7, 0.3, 1);
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
+    }
+
+    & > div.info {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 0.5rem;
+
+      a {
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.section {
+    min-height: 80vh;
+  }
+
+  div.projects {
+    width: fit-content;
+    & > div.project {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 1rem;
+      border-radius: 5px;
+      border: solid 1px var(--secondary);
+      padding: 0.5rem;
+
+      & div.image {
+        width: 24rem;
+        height: 12rem;
+      }
+    }
+  }
+}

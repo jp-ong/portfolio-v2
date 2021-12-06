@@ -1,3 +1,5 @@
-export default function IndexPage() {
-  return <div>Home Page</div>;
+import { Layout } from "components/layouts/Layout";
+
+export default function HomePage() {
+  return <Layout />;
 }
