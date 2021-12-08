@@ -6,7 +6,7 @@ import { SkillsSection } from "./sections/SkillsSection";
 import { ProjectsSection } from "./sections/ProjectsSection";
 import { AboutSection } from "./sections/AboutSection";
 
-export const Layout = () => {
+export const Layout = ({ props }) => {
   return (
     <React.Fragment>
       <Head>
@@ -20,8 +20,8 @@ export const Layout = () => {
       <main>
         <InfoSection />
         <AboutSection />
-        <SkillsSection />
-        <ProjectsSection />
+        <SkillsSection skills={props.skills} />
+        <ProjectsSection applications={props.applications} />
       </main>
     </React.Fragment>
   );
